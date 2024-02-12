@@ -156,7 +156,7 @@ function convertToRomanNumerals(num) {
       result += 'IX';
       break;
     default:
-      console.log(`Wrong symbol`);
+      break;
   }
 
   return result;
@@ -219,7 +219,6 @@ function convertNumberToString(numberStr) {
         result += 'point';
         break;
       default:
-        console.log(`Wrong symbol`);
     }
 
     if (i !== numberStr.length - 1) {
@@ -417,8 +416,9 @@ function sortByAsc(/* arr */) {
  *  '012345', 3 => '024135' => '043215' => '031425'
  *  'qwerty', 3 => 'qetwry' => 'qtrewy' => 'qrwtey'
  */
-function shuffleChar(str, iterations) {
-  let result = str;
+function shuffleChar(/* str, iterations */) {
+  throw new Error('Not implemented');
+  /* let result = str;
 
   for (let i = 0; i < iterations; i += 1) {
     let firstPart = '';
@@ -435,7 +435,7 @@ function shuffleChar(str, iterations) {
     result = secondPart + firstPart;
   }
 
-  return result;
+  return result; */
 }
 
 /**
